@@ -1,31 +1,267 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Haris Josin Peter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haris Josin Peter - Site Reliability & Backend Engineer</title>
+  <meta name="description"
+    content="Portfolio of Haris Josin Peter, Site Reliability and cloud-focused backend engineer.">
+  <!-- Google Fonts: Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <h1>Haris Josin Peter</h1>
+  <div class="layout">
+    <!-- Master Pane (Sidebar) -->
+    <aside class="master">
+      <header class="hero">
+        <img src="profile.png" alt="Haris Josin Peter" class="profile-img">
+        <h1 class="name">Haris Josin Peter</h1>
+        <h2 class="role">Site Reliability & Backend Engineer</h2>
+        <div class="contact-links">
+          <a href="mailto:harisjosinpeter@gmail.com" class="contact-link">harisjosinpeter@gmail.com</a>
+          <a href="https://github.com/haris-peter" target="_blank" rel="noopener noreferrer"
+            class="contact-link">GitHub</a>
+          <a href="https://www.linkedin.com/in/haris-peter-021748234/" target="_blank" rel="noopener noreferrer"
+            class="contact-link">LinkedIn</a>
+          <span class="contact-link">+91 8136844613</span>
+        </div>
+      </header>
+    </aside>
 
-  <p>Backend Developer | Django | Cloud | AI/ML</p>
+    <!-- Details Pane (Main Content) -->
+    <main class="details">
 
-  <h2>About</h2>
-  <p>
-    I am a backend developer working with Django and cloud technologies.
-    I enjoy building scalable APIs and backend systems.
-  </p>
+      <!-- About / Objective Section -->
+      <section id="about" class="section">
+        <h3 class="section-title">Behind the Code</h3>
+        <p class="objective">
+          Site Reliability and cloud-focused backend engineer with hands-on experience managing production-grade,
+          containerized microservices in a product-based ERP environment. Experienced in incident handling, performance
+          optimization, observability engineering, CI/CD automation, and infrastructure monitoring. Skilled in Docker,
+          Kubernetes, AWS, PostgreSQL, and production debugging across multi-service architectures.
+        </p>
+      </section>
 
-  <h2>Projects</h2>
+      <!-- Experience Section -->
+      <section id="experience" class="section">
+        <h3 class="section-title">Experience</h3>
 
-  <ul>
-    <li>Resume Generator using Ollama + Streamlit</li>
-    <li>Django Blog API</li>
-    <li>Task Management App using NestJS + Prisma</li>
-  </ul>
+        <div class="item">
+          <div class="item-header">
+            <h4 class="item-title">Django Backend Developer <span class="accent">· Caddayn</span></h4>
+            <span class="item-date">Jan 2025 — Present</span>
+          </div>
+          <ul class="item-list">
+            <li>Led backend architecture and DevOps operations as the sole backend engineer, managing a containerized,
+              microservices-based ERP system with five production services.</li>
+            <li>Improved overall system uptime by 10% through proactive monitoring, alert configuration, and performance
+              optimization.</li>
+            <li>Decreased PostgreSQL backup failure rate by 80% by implementing automated backup validation and
+              S3-compatible (MinIO) recovery pipelines.</li>
+            <li>Optimized the ERP billing module using Django bulk create, reducing response time from 10–13 seconds to
+              3–5 seconds (60% improvement).</li>
+            <li>Designed and deployed a full observability stack (Prometheus, Grafana, Node Exporter, Loki, Promtail),
+              enabling real-time container and system-level monitoring.</li>
+          </ul>
+        </div>
 
-  <h2>Links</h2>
+        <div class="item">
+          <div class="item-header">
+            <h4 class="item-title">Flutter Intern <span class="accent">· Caddayn</span></h4>
+            <span class="item-date">Aug 2023 — Jun 2024</span>
+          </div>
+          <ul class="item-list">
+            <li>Developed cross-platform apps with Flutter, implementing state management, API integration, and UI
+              animations.</li>
+          </ul>
+        </div>
+      </section>
 
-  <a href="https://github.com/yourusername">GitHub</a><br>
-  <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <h3 class="section-title">Projects</h3>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h4 class="project-title">LawLens AI</h4>
+            <a href="https://github.com/Joeljaison391/LawLens-AI" target="_blank" rel="noopener noreferrer"
+              class="project-link">Source ↗</a>
+          </div>
+          <p class="project-desc">Document Evaluation using RAG + LLMs</p>
+          <div class="project-badges">
+            <span class="badge">Winner – BeachHack Season 6</span>
+          </div>
+          <ul class="item-list">
+            <li>Built a regulatory document review engine using Retrieval Augmented Generation (RAG), ChromaDB, and
+              Mistral 7B.</li>
+            <li>Enabled compliance verification of legal documents through natural language reasoning and similarity
+              search.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h4 class="project-title">Orinio (formerly Orion)</h4>
+            <a href="http://github.com/parthavpovil/orion-web" target="_blank" rel="noopener noreferrer"
+              class="project-link">Source ↗</a>
+          </div>
+          <p class="project-desc">Decentralized Academic Review System with Blockchain and AI</p>
+          <div class="project-badges">
+            <span class="badge">HackVerse 2025</span>
+          </div>
+          <ul class="item-list">
+            <li>Developed a research platform on EduChain integrating AI and blockchain using IPFS, MetaMask, and
+              Ethereum smart contracts.</li>
+            <li>Incorporated AI-driven pre-review and plagiarism analysis using NLP.</li>
+            <li>Successfully optimized gas costs by 78% and reduced RAG system latency from 15s to 2s.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h4 class="project-title">Chaathan: The Last Ritual</h4>
+          </div>
+          <p class="project-desc">Real-time Multiplayer Social Deduction Game</p>
+          <div class="project-badges">
+            <span class="badge">2nd Prize – Global Game Jam 2026</span>
+          </div>
+          <ul class="item-list">
+            <li>Built a game inspired by Brahmayugam featuring authentic Mahapooja rituals.</li>
+            <li>Implemented an AI-controlled "Chaathan" entity designed to sabotage players.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h4 class="project-title">AI Safety Web3 Platform</h4>
+          </div>
+          <p class="project-desc">Community-driven AI Safety Solution on Polygon</p>
+          <div class="project-badges">
+            <span class="badge">1st Prize Winner (Web3) – Infinia Hackathon</span>
+          </div>
+          <ul class="item-list">
+            <li>Built a community-driven platform to enhance AI safety by generating real-time blocklists of harmful
+              content.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h4 class="project-title">SoulSync: AI-Assisted Reminiscence Tool</h4>
+            <a href="https://github.com/JoelJaison394/SoulSync" target="_blank" rel="noopener noreferrer"
+              class="project-link">Source ↗</a>
+          </div>
+          <p class="project-desc">Personalized NLP Companion for Alzheimer’s Patients</p>
+          <ul class="item-list">
+            <li>Created a personalized NLP-based chatbot for memory recall and emotional engagement.</li>
+            <li>Combined reminiscence therapy principles with user-specific interaction modeling.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Technical Skills Section -->
+      <section id="skills" class="section">
+        <h3 class="section-title">Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h5 class="skill-category">Programming</h5>
+            <p class="skill-items">Python, JavaScript, Dart, C++, Bash</p>
+          </div>
+          <div class="skill-group">
+            <h5 class="skill-category">Cloud / DevOps</h5>
+            <p class="skill-items">Docker, Kubernetes, GitHub Actions, AWS (EC2, S3), MinIO</p>
+          </div>
+          <div class="skill-group">
+            <h5 class="skill-category">Monitoring / Observability</h5>
+            <p class="skill-items">Prometheus, Grafana, Node Exporter, Loki, Promtail, cAdvisor</p>
+          </div>
+          <div class="skill-group">
+            <h5 class="skill-category">Databases</h5>
+            <p class="skill-items">PostgreSQL, MongoDB, ChromaDB</p>
+          </div>
+          <div class="skill-group">
+            <h5 class="skill-category">Frameworks / Tools</h5>
+            <p class="skill-items">Django, DRF, Flutter, Streamlit, Git, Linux, LangChain</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education & Certifications Section -->
+      <section id="education" class="section">
+        <h3 class="section-title">Education & Certifications</h3>
+
+        <div class="item">
+          <div class="item-header">
+            <h4 class="item-title">B.Tech CSE <span class="accent">· Sahrdaya College of Engineering and
+                Technology</span>
+            </h4>
+            <span class="item-date">2025</span>
+          </div>
+          <p class="item-desc">CGPA: 7.94</p>
+        </div>
+
+        <div class="certifications">
+          <h5 class="sub-title" style="margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 500;">Recent Certifications
+          </h5>
+          <ul class="item-list">
+            <li>AI Agents 101: Building AI Agents with MCP and Open-Source Inference (AMD)</li>
+            <li>Back End Development and APIs (freeCodeCamp)</li>
+            <li>Postman API Fundamentals Student Expert (Canvas Credentials)</li>
+            <li>WebTrix Web3 Workshop (IEEE Sahrdaya SB)</li>
+            <li>TechXInfinia Hackathon Certification (IEEE Sahrdaya SB)</li>
+            <li>Google AI Essentials (Google)</li>
+            <li>Foundations of Cybersecurity & GenAI Study Jams (Google)</li>
+            <li>Building an AI-Powered Game! (DeepLearning.AI)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>© 2026 Haris Josin Peter.</p>
+      </footer>
+    </main>
+
+    <!-- Right Sidebar (Navigation Dots/Lines) -->
+    <aside class="toc">
+      <nav class="nav-menu right-nav">
+        <a href="#about" class="nav-link" title="About"><span class="sr-only">About</span></a>
+        <a href="#experience" class="nav-link" title="Experience"><span class="sr-only">Experience</span></a>
+        <a href="#projects" class="nav-link" title="Projects"><span class="sr-only">Projects</span></a>
+        <a href="#skills" class="nav-link" title="Skills"><span class="sr-only">Skills</span></a>
+        <a href="#education" class="nav-link" title="Education"><span class="sr-only">Education</span></a>
+      </nav>
+    </aside>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            document.querySelectorAll('.right-nav .nav-link').forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href').substring(1) === entry.target.id) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }, {
+        rootMargin: '-20% 0px -70% 0px' // Trigger slightly above center
+      });
+
+      document.querySelectorAll('section[id]').forEach(section => {
+        observer.observe(section);
+      });
+    });
+  </script>
 </body>
+
 </html>
