@@ -201,10 +201,16 @@ a:hover {
     overflow: hidden;
 }
 
-.right-nav .nav-link:hover,
 .right-nav .nav-link.active {
     height: 48px;
     background-color: var(--accent);
+}
+
+@media (hover: hover) {
+    .right-nav .nav-link:hover {
+        height: 48px;
+        background-color: var(--accent);
+    }
 }
 
 .right-nav .nav-link::before {
@@ -401,6 +407,8 @@ a:hover {
     .layout {
         flex-direction: column;
         gap: 2rem;
+        padding-right: 3rem;
+        /* Make room for the scrollspy */
     }
 
     .master {
@@ -409,13 +417,51 @@ a:hover {
         height: auto;
     }
 
-    .toc {
-        display: none;
+    .profile-img {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 1.5rem;
     }
 
-    .nav-menu {
-        display: none;
-        /* Hide internal nav on smaller screens to save space */
+    .toc {
+        display: flex;
+        position: fixed;
+        top: 50%;
+        right: 1rem;
+        bottom: auto;
+        left: auto;
+        transform: translateY(-50%);
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        backdrop-filter: none;
+        padding: 0;
+        z-index: 100;
+        border: none;
+    }
+
+    .right-nav {
+        flex-direction: column;
+        gap: 1rem;
+        width: auto;
+    }
+
+    .right-nav .nav-link {
+        width: 2px;
+        height: 16px;
+        transition: height 0.3s ease, background-color 0.3s ease;
+    }
+
+    .right-nav .nav-link.active {
+        width: 2px;
+        height: 32px;
+    }
+
+    @media (hover: hover) {
+        .right-nav .nav-link:hover {
+            width: 2px;
+            height: 32px;
+        }
     }
 
     .item-header {
@@ -428,10 +474,22 @@ a:hover {
     }
 
     .name {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .role {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .contact-links {
+        align-items: center;
+        text-align: center;
     }
 
     .hero {
-        margin-bottom: 3.5rem;
+        margin-bottom: 2.5rem;
+        align-items: center;
     }
 }
