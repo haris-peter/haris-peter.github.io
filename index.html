@@ -6,10 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Haris Josin Peter - Site Reliability & Backend Engineer</title>
   <meta name="description"
-    content="Portfolio of Haris Josin Peter, Site Reliability and cloud-focused backend engineer.">
-  <!-- Google Fonts: Space Grotesk -->
+    content="Portfolio of Haris Josin Peter, Site Reliability and cloud-focused backend engineer, specializing in Django, Go, and DevOps.">
+  <link rel="canonical" href="https://haris-peter.github.io/">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Haris Josin Peter - Site Reliability & Backend Engineer">
+  <meta property="og:description" content="Portfolio of Haris Josin Peter, Site Reliability and cloud-focused backend engineer, specializing in Django, Go, and DevOps.">
+  <meta property="og:image" content="https://haris-peter.github.io/assets/profile.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://haris-peter.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts & Preconnects -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -23,14 +36,34 @@
 
     gtag('config', 'G-CK5GZ68Q6C');
   </script>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Haris Josin Peter",
+    "url": "https://haris-peter.github.io/",
+    "jobTitle": "Site Reliability & Backend Engineer",
+    "sameAs": [
+      "https://github.com/haris-peter",
+      "https://www.linkedin.com/in/haris-peter-021748234/"
+    ]
+  }
+  </script>
 </head>
 
 <body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main" class="skip-link sr-only">Skip to content</a>
+
   <div class="layout">
     <!-- Master Pane (Sidebar) -->
     <aside class="master">
+      <img src="assets/logo.png" alt="Brand Logo" class="brand-logo">
+      <img src="assets/banner.png" alt="Cover Banner" class="banner-img">
       <header class="hero">
-        <img src="profile.png" alt="Haris Josin Peter" class="profile-img">
+        <img src="assets/profile.png" alt="Haris Josin Peter" class="profile-img" width="140" height="140">
         <h1 class="name">Haris Josin Peter</h1>
         <h2 class="role">Site Reliability & Backend Engineer</h2>
         <div class="contact-links">
@@ -101,7 +134,7 @@
           <div class="project-header">
             <h4 class="project-title">LawLens AI</h4>
             <a href="https://github.com/Joeljaison391/LawLens-AI" target="_blank" rel="noopener noreferrer"
-              class="project-link">Source ↗</a>
+              class="project-link" aria-label="View LawLens AI source code">Source ↗</a>
           </div>
           <p class="project-desc">Document Evaluation using RAG + LLMs</p>
           <div class="project-badges">
@@ -119,7 +152,7 @@
           <div class="project-header">
             <h4 class="project-title">Orinio (formerly Orion)</h4>
             <a href="http://github.com/parthavpovil/orion-web" target="_blank" rel="noopener noreferrer"
-              class="project-link">Source ↗</a>
+              class="project-link" aria-label="View Orinio source code">Source ↗</a>
           </div>
           <p class="project-desc">Decentralized Academic Review System with Blockchain and AI</p>
           <div class="project-badges">
@@ -165,7 +198,7 @@
           <div class="project-header">
             <h4 class="project-title">SoulSync: AI-Assisted Reminiscence Tool</h4>
             <a href="https://github.com/JoelJaison394/SoulSync" target="_blank" rel="noopener noreferrer"
-              class="project-link">Source ↗</a>
+              class="project-link" aria-label="View SoulSync source code">Source ↗</a>
           </div>
           <p class="project-desc">Personalized NLP Companion for Alzheimer’s Patients</p>
           <ul class="item-list">
@@ -180,23 +213,23 @@
         <h3 class="section-title">Technical Skills</h3>
         <div class="skills-grid">
           <div class="skill-group">
-            <h5 class="skill-category">Programming</h5>
+            <h4 class="skill-category">Programming</h4>
             <p class="skill-items">Python, JavaScript, Dart, C++, Bash</p>
           </div>
           <div class="skill-group">
-            <h5 class="skill-category">Cloud / DevOps</h5>
+            <h4 class="skill-category">Cloud / DevOps</h4>
             <p class="skill-items">Docker, Kubernetes, GitHub Actions, AWS (EC2, S3), MinIO</p>
           </div>
           <div class="skill-group">
-            <h5 class="skill-category">Monitoring / Observability</h5>
+            <h4 class="skill-category">Monitoring / Observability</h4>
             <p class="skill-items">Prometheus, Grafana, Node Exporter, Loki, Promtail, cAdvisor</p>
           </div>
           <div class="skill-group">
-            <h5 class="skill-category">Databases</h5>
+            <h4 class="skill-category">Databases</h4>
             <p class="skill-items">PostgreSQL, MongoDB, ChromaDB</p>
           </div>
           <div class="skill-group">
-            <h5 class="skill-category">Frameworks / Tools</h5>
+            <h4 class="skill-category">Frameworks / Tools</h4>
             <p class="skill-items">Django, DRF, Flutter, Streamlit, Git, Linux, LangChain</p>
           </div>
         </div>
@@ -217,8 +250,8 @@
         </div>
 
         <div class="certifications">
-          <h5 class="sub-title" style="margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 500;">Recent Certifications
-          </h5>
+          <h4 class="sub-title" style="margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 500;">Recent Certifications
+          </h4>
           <ul class="item-list">
             <li>AI Agents 101: Building AI Agents with MCP and Open-Source Inference (AMD)</li>
             <li>Back End Development and APIs (freeCodeCamp)</li>
@@ -247,6 +280,7 @@
         <a href="#skills" class="nav-link" title="Skills"><span class="sr-only">Skills</span></a>
         <a href="#education" class="nav-link" title="Education"><span class="sr-only">Education</span></a>
       </nav>
+      <img src="assets/ghost.gif" alt="Cute Ghost Mascot" class="mascot-gif">
     </aside>
   </div>
 
