@@ -1,0 +1,21 @@
+# Node
+node_modules/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# SEOmator & Agent Tools
+.seomator/
+seo_report.xml
+.agents/
+.agent/
+_agents/
+_agent/
+.gemini/
+
+# Build/Temp
+dist/
+build/
+.cache/
+*.log
