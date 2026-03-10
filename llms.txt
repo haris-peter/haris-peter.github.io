@@ -1,0 +1,18 @@
+# Haris Josin Peter's Portfolio
+
+> Site Reliability & Backend Engineer specializing in Python, Django, Go, AWS, Docker, and Kubernetes.
+
+## About
+Site Reliability and cloud-focused backend engineer with hands-on experience managing production-grade, containerized microservices in a product-based ERP environment. Experienced in incident handling, performance optimization, observability engineering, CI/CD automation, and infrastructure monitoring.
+
+## Projects
+- LawLens AI: Document Evaluation using RAG + LLMs (Winner - BeachHack Season 6)
+- Orinio: Decentralized Academic Review System with Blockchain and AI
+- SoulSync: AI-Assisted Reminiscence Tool
+- Chaathan The Last Ritual: Real-time Multiplayer Social Deduction Game
+- AI Safety Web3 Platform: Community-driven AI Safety Solution on Polygon
+
+## Contact & Links
+- GitHub: https://github.com/haris-peter
+- LinkedIn: https://www.linkedin.com/in/haris-peter-021748234/
+- Email: harisjosinpeter@gmail.com
